@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 30, 2023 at 07:25 AM
+-- Generation Time: Dec 31, 2023 at 06:42 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.1.1
 
@@ -42,7 +42,24 @@ CREATE TABLE `register` (
 --
 
 INSERT INTO `register` (`id`, `name`, `value`, `file`, `email`, `password`, `cpassword`) VALUES
-(19, '', '', '', '', '', '');
+(19, '', '', '', '', '', ''),
+(20, '', '', '', '', '', ''),
+(21, '', '', '', '', '', ''),
+(22, '', '', '', '', '', '');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `works`
+--
+
+CREATE TABLE `works` (
+  `id` int(30) NOT NULL,
+  `title` varchar(30) NOT NULL,
+  `about` varchar(30) NOT NULL,
+  `price` int(30) NOT NULL,
+  `image` varchar(30) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Indexes for dumped tables
@@ -62,7 +79,7 @@ ALTER TABLE `register`
 -- AUTO_INCREMENT for table `register`
 --
 ALTER TABLE `register`
-  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `id` int(30) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
